@@ -1,0 +1,324 @@
+/* ---------------- Global Styles ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EAEDED;
+}
+
+/* ---------------- Navbar ---------------- */
+#navbar {
+  background-color: #000000; /* ✅ Pure Black Navbar */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-logo .logo {
+  background-image: url('amazon-logo-cover-300x185.png');
+  background-size: cover;
+  height: 50px;
+  width: 120px;
+}
+
+.border {
+  border: 1px solid transparent;
+}
+
+.border:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* ---------------- Address ---------------- */
+.add-first {
+  color: #cccccc;
+  font-size: 0.8rem;
+  margin-left: 15px;
+}
+
+.add-secound {
+  font-size: 1rem;
+  margin-left: 3px;
+}
+
+.add-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------- Search Bar ---------------- */
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: pink;
+  width: 620px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.search-select {
+  background-color: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #febd69;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #0f1111;
+}
+
+.nav-search:hover {
+  border: 2px solid #f3a847;
+}
+
+/* ---------------- Sign-in & Cart ---------------- */
+span {
+  font-size: 0.8rem;
+}
+
+.nav-second {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.nav-cart i {
+  font-size: 25px;
+}
+
+.nav-cart {
+  font-weight: 700;
+}
+
+/* ---------------- Panel ---------------- */
+.panel {
+  height: 40px;
+  background-color: #232F3E;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.panel-all {
+  font-weight: 700;
+}
+
+.panel-opt {
+  display: flex;
+  gap: 15px;
+  width: 80%;
+  font-size: 0.9rem;
+}
+
+.panel-opt p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.panel-deals {
+  font-weight: 700;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero-section {
+  background-image: url('TallHero_3000X1200_Unrec._CB593464763_.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #EAEDED;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* ✅ Message bottom par */
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+/* हल्का gradient जैसा Amazon में दिखता है */
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(234, 237, 237, 1) 5%, rgba(234, 237, 237, 0) 80%);
+  z-index: 2;
+}
+
+/* ✅ Transparent bottom message box */
+.hero-message {
+  position: relative;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.25); /* transparent glass effect */
+  backdrop-filter: blur(6px);
+  color: black;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 90%;
+  margin-bottom: 25px; /* Bottom se thoda gap */
+}
+
+.hero-message a {
+  color: #007185;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-message a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- Shop Section ---------------- */
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #EAEDED;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.Box {
+  background-color: white;
+  width: 23%;
+  min-width: 220px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.Box:hover {
+  transform: scale(1.03);
+}
+
+.Box-img {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.Box-content h2 {
+  font-size: 1.1rem;
+  color: #0f1111;
+}
+
+.Box-content p {
+  color: #007185;
+  font-size: 0.9rem;
+}
+
+.Box-content p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  margin-top: 15px;
+}
+
+.foot-panel1 {
+  background-color: #37475A;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.foot-panel1:hover {
+  background-color: #485769;
+  cursor: pointer;
+}
+
+.foot-panel2 {
+  background-color: #232F3E;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+
+.foot-panel2 ul {
+  list-style: none;
+}
+
+.foot-panel2 p {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.foot-panel2 a {
+  display: block;
+  color: #DDDDDD;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.foot-panel2 a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ✅ foot-panel3 completely removed */
+
+.foot-panel4 {
+  background-color: #131A22;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 20px 0;
+}
+
+.foot-panel4 a {
+  margin: 0 10px;
+  color: #DDDDDD;
+  text-decoration: none;
+}
+
+.foot-panel4 a:hover {
+  text-decoration: underline;
+}
+
+.coppy-write {
+  margin-top: 10px;
+  color: #999;
+}
